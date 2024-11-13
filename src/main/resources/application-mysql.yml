@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "Spring data JPA"
+  datasource:
+    url:  jdbc:mysql://172.17.0.3:3306/data_jpa?createDatabaseIfNotExist=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+
